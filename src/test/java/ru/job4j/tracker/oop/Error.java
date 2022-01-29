@@ -23,7 +23,7 @@ public class Error {
    }
 
     public static void main(String[] args) {
-        Error error = new Error(true, 5, "Есть ошибки!");
+        Error error = new Error(true, 7, "Есть ошибки!");
         error.printInfo();
         Error err = new Error(true, 3, "Еще остались ошибки!");
         err.printInfo();
