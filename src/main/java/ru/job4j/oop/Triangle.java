@@ -12,8 +12,8 @@ public class Triangle {
     }
 
     public double semiPerimeter(double a, double b, double c) {
-        double p = 0;
-        return p = (a + b + c) / 2;
+        double p = (a + b + c) / 2;
+        return p;
     }
 
     public boolean exist(double ab, double ac, double bc) {
