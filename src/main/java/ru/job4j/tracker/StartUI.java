@@ -21,18 +21,15 @@ public class StartUI {
             } else if (select == 1) {
                 System.out.println("=== Show all items ===");
                 Item[] items = tracker.findAll();
-                for (Item item : items) {
-                    System.out.println(item);
+                if (items.length > 0) {
+                    for (Item item : items) {
+                        System.out.println(item);
+                    }
+                } else {
+                    System.out.println("Хранилище еще не содержит заявок");
                 }
             }
-            Item[] items = tracker.findAll();
-            if (items.length > 0) {
-                for (Item item : items) {
-                    System.out.println(item);
-                }
-            } else {
-                System.out.println("Хранилище еще не содержит заявок");
-            }
+
         }
 
     }
