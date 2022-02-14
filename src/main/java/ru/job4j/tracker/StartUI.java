@@ -29,9 +29,7 @@ public class StartUI {
                     System.out.println("Хранилище еще не содержит заявок");
                 }
             }
-
         }
-
     }
 
     private void showMenu() {
