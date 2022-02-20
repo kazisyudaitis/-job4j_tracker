@@ -124,10 +124,8 @@ public class TrackerTest {
         tracker.add(item);
         String[] answers = {
                 String.valueOf(item.getId()),
-                "delete item"
         };
         StartUI.deleteItem(new StubInput(answers), tracker);
-        Item delete = tracker.findById(item.getId());
-        assertThat(delete, is(nullValue()));
+        assertNull(tracker.findById(item.getId()));
     }
 }
