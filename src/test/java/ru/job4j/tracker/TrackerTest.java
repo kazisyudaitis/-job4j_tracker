@@ -110,10 +110,9 @@ public class TrackerTest {
     public void whenReplaceItem() {
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Replaced item"));
-        String id = "1";
         String replacedName = "New item name";
         Input in = new StubInput(
-                new String[] {"0", "1", "New item name", "1"}
+                new String[] {"0", String.valueOf(item.getId()), "New item name", "1"}
         );
         UserAction[] actions = {
                 new ReplaceAction(),
@@ -127,9 +126,8 @@ public class TrackerTest {
     public void whenDeleteItem() {
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Deleted item"));
-        String id = "1";
         Input in = new StubInput(
-                new String[] {"0", "1", "1"}
+                new String[] {"0", String.valueOf(item.getId()), "1"}
         );
         UserAction[] actions = {
                 new DeleteAction(),
