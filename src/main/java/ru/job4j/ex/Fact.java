@@ -7,7 +7,7 @@ public class Fact {
         }
         int rsl = 1;
         for (int index = 0; index <= n; index++) {
-            rsl*= index;
+            rsl *= index;
         }
         return rsl;
     }
