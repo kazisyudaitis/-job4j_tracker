@@ -11,9 +11,10 @@ public class UniqueText {
         for (String str : origin) {
             textSp.add(str);
         }
-        for (String str1 : text) {
-            if (!textSp.contains(str1)) {
+        for (String str : text) {
+            if (!textSp.contains(str)) {
                 rsl = false;
+                break;
             }
         }
         return rsl;
