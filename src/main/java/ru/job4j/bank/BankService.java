@@ -10,7 +10,7 @@ public class BankService {
 
     public void addUser(User user) {
         if (!user.equals(users)) {
-            users.put(user, new ArrayList<Account>());
+            users.putIfAbsent(user, new ArrayList<Account>());
         }
     }
 
