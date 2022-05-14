@@ -1,6 +1,6 @@
 package ru.job4j.inheritance;
 
-public class IceCreamPlusJamPlusNuts extends IceCreamPlusJam{
+public class IceCreamPlusJamPlusNuts extends IceCreamPlusJam {
     private static final int NUTS_PRICE = 25;
 
     public IceCreamPlusJamPlusNuts(int weight) {
@@ -9,7 +9,7 @@ public class IceCreamPlusJamPlusNuts extends IceCreamPlusJam{
 
     @Override
     public int price() {
-        return super.price();
+        return NUTS_PRICE  + super.price();
     }
 
     public static void main(String[] args) {

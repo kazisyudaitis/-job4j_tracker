@@ -9,6 +9,6 @@ public class IceCreamPlusJam extends IceCream {
 
     @Override
     public int price() {
-        return super.price();
+        return JAM_PRICE  + super.price();
     }
 }
