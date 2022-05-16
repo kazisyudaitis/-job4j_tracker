@@ -18,7 +18,7 @@ public class ItemDescByNameTest {
                 new Item("Petr"),
                 new Item("Alex")
         );
-        Collections.sort(items, new ItemDescByName().reversed());
+        Collections.sort(items, new ItemDescByName());
         List<Item> expected = Arrays.asList(
                 new Item("Petr"),
                 new Item("Ivan"),
